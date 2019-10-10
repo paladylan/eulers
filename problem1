@@ -1,0 +1,27 @@
+//https://www.projecteuler.net/problem=1
+//find sum of integers that are multiples of 3 and 5
+#include<iostream>
+
+int n = 0;
+int sum = 0;
+int i;
+
+int main()
+{
+	std::cout << "Find sum of natural numbers below N(enter value): " << std::endl;
+	std::cin >> n;
+	while(i < n-1)
+	{
+		i = i + 1; //fuck you 
+		if (i % 3 == 0)
+		{
+			sum += i;
+		}
+		else if (i % 5 == 0)
+		{
+			sum += i;
+		}
+		else continue;
+	}
+	std::cout << "sum: " << sum << std::endl;
+}
